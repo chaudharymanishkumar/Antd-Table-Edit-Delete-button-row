@@ -44,9 +44,11 @@ const EditableTable = () => {
 
   const edit = (record) => {
     form.setFieldsValue({
-      name: '',
-      age: '',
-      address: '',
+        id: '',
+        username: '',
+        fullname: '',
+        age: '',
+        address: '',
       ...record,
     });
     setEditingKey(record.key);
